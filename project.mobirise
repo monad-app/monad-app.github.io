@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Monad",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/monad_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsite: https://monad-app.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://monad-app.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "jdp809c0zq",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Monad™ | Monad EVM Blockchain | Official Site",
+        "meta_descr": "Monad is the most performant EVM-compatible blockchain with 10,000 TPS, 0.8s finality, and 0.4s block times. Build beyond limits, explore decentralized apps, and join the next frontier of crypto.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.monad.xyz/\"><img src=\"@PROJECT_PATH@/assets/images/monad.png\" alt=\"Monad\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "v9Ggz9wt9W",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Monad EVM Blockchain: Pioneering the Future of Ethereum-Compatible Solutions</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the ever-evolving landscape of blockchain technology, platforms that facilitate the development of decentralized applications (dApps) are increasingly sought after. Among these emerging solutions is Monad, an Ethereum Virtual Machine (EVM)-compatible blockchain designed to enhance scalability, usability, and developer experience. As Ethereum continues to be a dominant force in the decentralized ecosystem, Monad aims to provide a more efficient and cost-effective environment for developers while retaining compatibility with existing Ethereum applications. This article explores Monad in-depth, examining its architecture, unique features, governance, use cases, and potential impact on the blockchain landscape.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Monad?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Overview<br>Monad is an EVM-compatible layer of blockchain built to optimize the performance of decentralized applications and smart contracts. It integrates seamlessly with existing Ethereum infrastructure, enabling developers to leverage their knowledge and tools while accessing advanced features that enhance the functionality of their applications.<br><br>Core Mission<br>The mission of Monad is to empower developers by providing a robust and efficient environment for building, deploying, and scaling decentralized applications. Its goals include:<br><br>Enhanced Scalability: Implementing solutions that achieve higher transaction throughput and lower latency.<br>Cost Reduction: Minimizing transaction fees to enable wider accessibility for users and developers.<br>User Experience: Creating a seamless interaction flow for developers and users alike.<br>Interoperability: Ensuring compatibility with Ethereum standards and existing dApps.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Technology Behind Monad</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. EVM Compatibility<br>At its core, Monad is designed to be fully compatible with the Ethereum Virtual Machine (EVM). This alignment allows developers to use familiar tools such as Solidity, Truffle, and Hardhat, facilitating a smooth transition for those already operating within the Ethereum ecosystem. Features of EVM compatibility include:<br><br>Smart Contract Deployment: Developers can deploy existing Ethereum smart contracts on Monad without modification.<br>Tooling Support: By supporting popular Ethereum developer tools, Monad lowers the barriers to entry for developers looking to create dApps.<br>2. Unique Consensus Mechanism<br>Monad employs a consensus mechanism tailored for high throughput and low latency while maintaining the integrity and security typical of blockchain technology. The unique consensus mechanism incorporates:<br><br>Delegated Proof of Stake (DPoS): This hybrid model allows token holders to elect validators who are responsible for block production and transaction verification, improving speed and efficiency while still providing decentralization.<br>Adaptive Consensus Parameters: Monad adjusts its consensus parameters dynamically based on network conditions, promoting optimal performance during peak and off-peak periods.<br>3. Layer 2 Scaling Solutions<br>To enhance its scalability, Monad integrates Layer 2 solutions that improve transaction speed and reduce costs. These include:<br><br>Rollups: By bundling multiple transactions into a single one, rollups significantly increase throughput while offloading the main blockchain, thereby improving performance.<br>State Channels: These allow participants to conduct multiple transactions off-chain and only commit the final state to the main blockchain, further reducing congestion.<br>4. Advanced Token Standards<br>Monad supports advanced token standards and features, which enable developers to create various types of tokens for specific use cases. These include:<br><br>ERC20 and ERC721 Tokens: Monad allows developers to create fungible and non-fungible tokens, giving rise to diverse applications from digital currencies to collectibles.<br>Customizable Token Logic: Developers can implement custom token features that cater to unique business requirements, enhancing the flexibility of their projects.<br>5. Enhanced Security Measures<br>Security is paramount in blockchain technology, and Monad employs multiple layers of protection to ensure the integrity and security of its network.<br><br>Smart Contract Audits: Regular audits and checks are performed on smart contracts to identify vulnerabilities and ensure secure deployment.<br>Multi-Signature Wallet Support: Monad supports multi-signature wallets, which require multiple parties to sign off on transactions, adding an additional layer of security.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Governance Structure</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Decentralized Governance Model<br>Monad embraces a decentralized governance model that encourages community involvement in decision-making processes. This approach ensures that all stakeholders have a say in the future direction of the platform.<br><br>Key Features:<br>Token-Based Voting: Token holders can participate in voting on proposals and protocol upgrades, influencing the governance of the Monad ecosystem.<br>Community Proposals: The community can submit proposals for improvements, allowing ideas to originate from within the user base and promoting a sense of ownership.<br>2. Transparency<br>The governance structure prioritizes transparency, with all proposals and votes recorded on the blockchain. This commitment to openness ensures accountability and fosters trust within the community.<br><br>3. Continuous Development<br>The decentralized governance model also allows for continuous and iterative development, where community feedback can drive enhancements and new features, ensuring that the platform remains relevant and competitive.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of Monad</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Decentralized Finance (DeFi)<br>Monad provides an efficient platform for building DeFi applications, enabling developers to create projects such as:<br><br>Lending Platforms: Users can borrow and lend cryptocurrencies seamlessly, leveraging Monad’s low transaction fees and high throughput.<br>Decentralized Exchanges (DEXs): With efficient performance, DEXs on Monad can offer traders rapid transactions and a better user experience.<br>2. Non-Fungible Tokens (NFTs)<br>The ability to create and trade NFTs quickly and affordably makes Monad an attractive choice for artists and creators. Use cases include:<br><br>Art and Collectibles: Artists can mint unique digital art pieces as NFTs, joining an emerging market that allows for direct sales and royalties.<br>Gaming Assets: Game developers can create NFT-based in-game items, allowing players to trade and own digital assets securely.<br>3. Supply Chain Solutions<br>Monad’s transparency and traceability features are well-suited for application in supply chain management. Potential use cases include:<br><br>Provenance Tracking: Companies can ensure product authenticity and traceability from origin to consumer, enhancing consumer trust and compliance.<br>Real-Time Inventory Management: Smart contracts can automate processes in the supply chain, improving efficiency and reducing errors.<br>4. Identity and Access Management<br>Monad can facilitate secure digital identity management, enabling applications such as:<br><br>Self-Sovereign Identities: Users can manage and control their identities, allowing them to authenticate with various services securely.<br>Access Control for Services: Smart contracts can enforce conditions for access to services based on identity verification, streamlining user interactions.<br>5. IoT Integration<br>With its scalability, Monad is well-positioned to support the integration of Internet of Things (IoT) devices. Potential use cases include:<br><br>Device Management: Firms can manage IoT devices on the Monad blockchain, ensuring secure connections and communications.<br>Data Marketplaces: IoT devices can securely share data through blockchain-enabled marketplaces, allowing participants to monetize their data.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Advantages of Monad</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. High Performance<br>Monad’s architecture allows for thousands of transactions per second (TPS), dramatically enhancing the performance of dApps compared to traditional Ethereum-based solutions.<br><br>2. Low Transaction Costs<br>The platform's design minimizes transaction fees, making it accessible for users and encouraging experimentation.<br><br>3. Developer-Friendly Ecosystem<br>By maintaining EVM compatibility, Monad provides a familiar environment for developers, making it easy for them to transition from Ethereum and build on the platform effectively.<br><br>4. Enhanced User Experience<br>With a focus on seamless interactions and quick execution, Monad enhances overall user experience, making it more appealing to end-users.<br><br>5. Interoperability<br>Monad's compatibility with Ethereum and other networks creates opportunities for cross-chain interactions, expanding the potential for diverse applications.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Competition<br>Monad operates in a highly competitive environment, where numerous platforms vie for dominance in the blockchain space. Continuous innovation and differentiation will be key to establishing a robust market presence.<br><br>2. Regulatory Landscape<br>As the blockchain industry faces increasing scrutiny from regulators globally, Monad must navigate complex regulations to ensure compliance while advocating for the technology.<br><br>3. Adoption Hurdles<br>Convincing developers to switch from established platforms to Monad requires demonstrable benefits. Effective outreach and marketing strategies will be vital to fostering adoption.<br><br>4. Security Risks<br>Despite advanced security measures, the inherent risks associated with smart contracts and blockchain technology persist. Continuous vigilance and improvements in security practices will be crucial.<br><br>5. Technical Complexity<br>For new developers unfamiliar with blockchain technology, the learning curve can be steep. Providing educational resources and support will help ease this transition.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Monad</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Expanding Partnerships<br>To enhance its ecosystem, Monad may pursue strategic partnerships with enterprises, developers, and organizations. Collaborations can foster growth and broaden the platform's capabilities.<br><br>2. Continuous Improvement<br>Ongoing development efforts focused on performance enhancements, user experience improvements, and feature expansions will be key to retaining a competitive edge.<br><br>3. Community Engagement<br>Building a strong community around Monad will be essential for its long-term success. Engaging users through events, forums, and social media will foster loyalty and sustained interaction with the platform.<br><br>4. Global Outreach<br>As blockchain adoption continues to grow, Monad can expand its reach in emerging markets where the demand for efficient decentralized applications is on the rise.<br><br>5. Focus on Sustainability<br>As environmental concerns surrounding blockchain technology grow, Monad may place emphasis on sustainable practices, promoting its low energy consumption and green initiatives to attract environmentally conscious users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Monad represents a significant evolution in the realm of EVM-compatible blockchains, addressing common challenges faced by developers and users alike. With its focus on scalability, low costs, and ease of use, Monad stands poised to enable the next generation of decentralized applications.<br><br>As blockchain technology continues to mature, the potential for Monad to foster innovation and accessibility within the ecosystem is immense. By prioritizing community engagement, continuous improvement, and strategic partnerships, Monad aims to establish itself as a leading platform in the ever-expanding blockchain landscape.<br><br>In an age where the digital transformation is reshaping industries, Monad offers a compelling solution to empower developers and users to thrive in a decentralized world. As we look to the future, the impact of Monad EVM blockchain could very well be profound, contributing to the growth and evolution of blockchain technology.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "v9GgzmcroU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
